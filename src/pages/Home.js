@@ -2,6 +2,7 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
+import CV from "../assets/CV.pdf";
 
 function Home() {
     return (
@@ -10,7 +11,10 @@ function Home() {
                 <img className={"photo"} src={require("../assets/profile_photo.png")} alt={"profile"}/>
                 <h2>Hi, my name is Karina</h2>
                 <div className={"prompt"}>
-                    <p>A Frontend Developer with passion for learning and creating.</p>
+                    <p>A Frontend Developer with passion for learning and creating {""}
+                        <button onClick={() => window.open(require("../assets/CV.pdf"), "_blank")}>
+                            Download CV
+                        </button></p>
                     <LinkedInIcon onClick={() => window.location.href = "https://www.linkedin.com/in/karina-svanstroem/"}/>
                     <GitHubIcon onClick={() => window.location.href = "https://github.com/KarinSV"}/>
                 </div>

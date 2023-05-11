@@ -11,6 +11,18 @@
     border-radius: 50%;
 }
 
+button{
+    border-radius: 10px;
+    padding: 7px;
+    color: #3e497a;
+    font-weight: bold;
+}
+
+button:hover {
+    transition: 2s ease;
+    scale: 1.1;
+}
+
 .about {
     width: 100%;
     height: calc(100vh - 100px);

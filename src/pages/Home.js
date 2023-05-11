@@ -2,7 +2,6 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
-import CV from "../assets/CV.pdf";
 
 function Home() {
     return (

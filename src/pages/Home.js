@@ -2,10 +2,16 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
+import {motion} from "framer-motion";
 
 function Home() {
     return (
-        <div className={"home"}>
+        <motion.div
+            className={"home"}
+            intial={{width:0}}
+            animate={{width:"100%"}}
+            exit={{x: window.innerWidth, transition: {duration:0.3}}}
+        >
             <div className={"about"}>
                 <img className={"photo"} src={require("../assets/profile_photo.png")} alt={"profile"}/>
                 <h2>Hi, my name is Karina</h2>
@@ -41,7 +47,7 @@ function Home() {
                     </li>
                 </ol>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

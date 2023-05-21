@@ -12,6 +12,7 @@ export const ProjectList = [
         name: "A responsive and accessible website with basic interactivity",
         image: friends,
         skills: "HTML, CSS, JavaScript, Responsiveness",
+        repo: "https://github.com/KarinSV/friends"
     },
     {
         name: "Display random cat image from an API",

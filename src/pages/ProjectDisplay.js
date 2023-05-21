@@ -12,10 +12,14 @@ function ProjectDisplay() {
         <div className={project}>
             <h1>{project.name}</h1>
             <image src={project.image} />
+            <a href={project.repo} target="_blank">Source Code</a>
             <p>
                 <b>Skills:</b> {project.skills}
             </p>
-            <GitHubIcon onClick={() => window.location.href = "https://github.com/KarinSV"} />
+            <a href="https://github.com/KarinSV" target="_blank">
+            <GitHubIcon/>
+            </a>
+
         </div>
     );
 }

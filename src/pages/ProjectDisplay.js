@@ -10,7 +10,7 @@ function ProjectDisplay() {
     const project = ProjectList[id]
 
     return (
-        <div
+        <motion.div
             className={project}
             intial={{width:0}}
             animate={{width:"100%"}}
@@ -18,15 +18,15 @@ function ProjectDisplay() {
         >
             <h1>{project.name}</h1>
             <image src={project.image} />
-            <a href={project.repo} target="_blank">Source Code</a>
+            <a href={project.repo} target="_blank" rel="noreferrer">Source Code</a>
             <p>
                 <b>Skills:</b> {project.skills}
             </p>
-            <a href="https://github.com/KarinSV" target="_blank">
+            <a href="https://github.com/KarinSV" target="_blank" rel="noreferrer">
             <GitHubIcon/>
             </a>
 
-        </div>
+        </motion.div>
     );
 }
 
